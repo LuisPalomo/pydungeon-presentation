@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PyDungeon: Desarrollo de un videojuego en la nube con tecnologías Open Source</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1 -->
+				<section>
+					<img src="images/logo-US-footer.png" style="margin:0;"/>
+					<h1 style="margin:0;">PyDungeon</h1>
+					<h3>Desarrollo de un videojuego en la nube<br>
+						con tecnologías Open Source</h3>
+					<p>
+						<b>Realizado por:</b> Luis Manuel Palomo Sivianes<br>
+						<b>Dirigido por:</b> Francisco Sivianes Castillo<br>
+					</p>
+					<!-- <img src="images/Logo-ETSII.png" style="margin:0; float:left;"/> -->
+					<img src="images/logo-dte.png" style="margin:0;"/>
+				</section>
+				<!-- Slide 2 -->
+				<section>
+					<h2>Contenido</h2>
+					<ul>
+						<li>Introducción y objetivos</li>
+						<li>Estado del arte</li>
+						<li>Tecnologías y herramientas</li>
+						<li>Implementación del juego</li>
+						<li>Difusión del juego</li>
+						<li>Conclusiones y mejoras a futuro</li>
+					</ul>
+				</section>
+				<!-- Slide 3 -->
+				<section>
+					<h2>PyDungeon</h2>
+					<img src="images/pydungeon.png" >
+					<ul>
+						<li>Es un videojuego independiente en 2D de género "Roguelike"</li>
+						<li>Realizado usando exclusivamente tecnologías Open Source</li>
+						<li>Utiliza generación procedural para crear el contenido</li>
+						<li>Se basa en un servidor en la nube</li>
+					</ul>
+				</section>
+				<!-- Slide 4 -->
+				<section>
+					<h2>Objetivos del proyecto</h2>
+					<ul>
+						<li>Análisis de herramientas Open Source disponibles para el desarrollo de un videojuego independiente</li>
+						<li>Implementación de algoritmos de generación procedural y de inteligencia artificial</li>
+						<li>Implementación de un servidor en la nube que interactúe con el cliente de juego</li>
+					</ul>
+				</section>
+				<!-- Slide 5 -->
+				<section>
+					<h2>Metodología</h2>
+					<img src="images/image035.png" style="background: white;">
+				</section>
+				<!-- Slides 6, 7, 8 -->
+				<section>
+					<section>
+						<h2>Los videojuegos independientes</h2>
+						<img src="images/indie-game-characters.jpg" width="50%">
+						<br>
+						<ul>
+							<li>Equipos pequeños</li>
+							<li>Escaso o nulo presupuesto</li>
+							<li>Sin restricciones creativas</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Plataformas de financiación</h2>
+						<img src="images/steam-green.jpg" style="float:left;" width="40%">
+						<img src="images/kickstarter-logo-large.jpg" style="float:right;" width="40%">
+					</section>
+					<section>
+						<h2>Casos de éxito</h2>
+						<img src="images/minecraft-4.jpg" style="float:left;" width="40%">
+						<img src="images/star-citizen-logo.jpg" style="float:right;" width="40%">
+					</section>
+				</section>
+				<!-- Slide 9 -->
+				<section>
+					<h2>El género roguelike</h2>
+					<img src="images/DCSS_ascii_vs_tiles.png" width="40%" style="float:left;">
+					<br>
+					<ul style="float:right;">
+						<li>Un jugador</li>
+						<li>Sistema de turnos</li>
+						<li>Énfasis en el contenido aleatorio</li>
+						<li>Premisa de juego sencilla</li>
+					</ul>
+				</section>
+				<!-- Slide 10 -->
+				<section>
+					<h2>Estado del arte</h2>
+					<img src="images/1_the_enchanted_cave.jpg" style="float:left; height:200px;">
+					<img src="images/capsule_467x181.jpg" style="float:right; height:200px;">
+					<br>
+					<img src="images/header.jpg" style="float:left; height:200px;">
+					<img src="images/BoI-logo.jpg" style="float:right; height:200px;">
+				</section>
+				<!-- Slides 11, 12, 13, 14 -->
+				<section>
+					<section>
+						<h2>Tecnologías utilizadas</h2>
+						<ul>
+							<li>Lenguaje de programación: <b>Python</b></li>
+							<li>Motor de juego: <b>PyGame</b></li>
+							<li>Framework web: <b>Django</b></li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/python-logo-master-v3-TM.png">
+						<h2>¿Por qué Python?</h2>
+						<ul>
+							<li>Open Source</li>
+							<li>Facilidad de aprendizaje</li>
+							<li>Flexibilidad</li>
+							<li>Extensa comunidad</li>
+							<li>Demanda alta</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/pygame_logo.png">
+						<h2>PyGame</h2>
+						<ul>
+							<li>Open Source</li>
+							<li>Sencillo y limpio</li>
+							<li>Enfocado en juegos 2D</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/django-logo-negative.png">
+						<h2>Django</h2>
+						<ul>
+							<li>Open Source</li>
+							<li>Facilidad de uso</li>
+							<li>Gran comunidad</li>
+						</ul>
+					</section>
+				</section>
+				<!-- Slides 15, 16, 17, 18, 19 -->
+				<section>
+					<section>
+						<h2>Herramientas</h2>
+						<img src="images/opensource-tree.png">
+					</section>
+					<section>
+						<h2>Documentación</h2>
+						<p>Memoria: <b>LibreOffice</b></p>
+						<img src="images/LibreOffice_logo.svg.png" height="100px">
+						<p>Transparencias: <b>reveal.js</b></p>
+						<img src="images/reveal-logo.jpg" height="100px">
+					</section>
+					<section>
+						<h2>Entornos de desarrollo</h2>
+						<p>Python: <b>PyCharm</b></p>
+						<img src="images/pycharm-logo.png" height="100px">
+						<p>Html, CSS, Javascript: <b>Atom</b></p>
+						<img src="images/atom-logo.jpg" height="100px">
+					</section>
+					<section>
+						<h2>Control de versiones</h2>
+						<p>Sistema: <b>Git</b></p>
+						<img src="images/Git-Logo-2Color.png" height="100px">
+						<p>Repositorio: <b>GitHub</b></p>
+						<img src="images/github-logo.png" height="100px">
+					</section>
+					<section>
+						<h2>Editores gráficos</h2>
+						<div style="float: left;">
+							<p>Imágenes: <b>Gimp</b></p>
+							<img src="images/gimp_logo.png" height="100px">
+							<p>Sprites y Tilesets: <b>Piskel</b></p>
+							<img src="images/piksel-logo.png" height="100px">
+						</div>
+						<div style="float: right;">
+							<p>Diagramas: <b>Dia Diagram Editor</b></p>
+							<img src="images/dia_logo.png" height="100px">
+							<p>Mockups: <b>Pencil Project</b></p>
+							<img src="images/pencil-project.jpg" height="100px">
+						</div>
+					</section>
+				</section>
+				<!-- Slides	20, 21, 22, 23 -->
+				<section>
+					<section>
+						<h2>Implementación</h2>
+						<h3>Programación dirigida por eventos</h3>
+						<img src="images/events.png">
+					</section>
+					<section>
+						<h2>Generación procedural</h2>
+						<img src="images/procedural.png" style="float:left;">
+						<br>
+						<ul style="float:right;">
+							<br>
+							<li>Basado en habitaciones</li>
+							<br>
+							<li>Posición inicial</li>
+							<br>
+							<li>Enemigos y cofres según dificultad</li>
+							<br>
+						</ul>
+					</section>
+					<section>
+						<h2>Inteligencia Artificial</h2>
+						<img src="images/ai.png" style="float:left;">
+						<br>
+						<ul>
+							<br>
+							<li><b>Aleatoria</b></li>
+							<br>
+							<li><b>Agresiva</b></li>
+							<br>
+						</ul>
+					</section>
+					<section>
+						<h2>Servidor</h2>
+						<img src="images/server.png" style="float:left;">
+						<br>
+						<ul>
+							<br>
+							<li>Arquitectura API Rest</li>
+							<br>
+							<li>Llamadas HTTP</li>
+							<br>
+							<li>Respuestas en JSON</li>
+							<br>
+						</ul>
+					</section>
+				</section>
+				<!-- Slide 24 -->
+				<section>
+					<h2>Difusión</h2>
+					<div style="float: left;">
+						<p><b>Twitter</b></p>
+						<img src="images/Twitter_2010_logo_-_from_Commons.svg.png" height="100px">
+						<p><b>Facebook</b></p>
+						<img src="images/facebook_2015_logo_detail.png" height="100px">
+					</div>
+					<div style="float: right;">
+						<p><b>reddit</b></p>
+						<img src="images/Reddit-Logo-Transparent.png" height="100px">
+						<p><b>Página web</b></p>
+						<img src="images/logo_http.jpg" height="100px">
+					</div>
+				</section>
+				<!-- Slide 25 -->
+				<section>
+					<h2>Conclusiones</h2>
+					<ul>
+						<li>Gran variedad de herramientas Open Source de gran calidad</li>
+						<br>
+						<li>Los algoritmos de generación procedural facilitan mucho el desarrollo</li>
+						<br>
+						<li>Desarrollar un servidor para la nube es fácil y sencillo</li>
+						<br>
+						<li>Utilizando redes sociales se ha conseguido realizar una campaña de márketing sin inversión previa</li>
+					</ul>
+				</section>
+				<!-- Slide 26 -->
+				<section>
+					<h2>Mejoras</h2>
+					<ul>
+						<li>Música y efectos de sonido</li>
+						<br>
+						<li>Animaciones y efectos visuales</li>
+						<br>
+						<li>Más funcionalidad en el servidor</li>
+						<br>
+						<li>Más tipos de enemigos y objetos</li>
+						<br>
+						<li>Mejorar el algoritmo de generación procedural</li>
+					</ul>
+				</section>
+				<!-- Slide 27 -->
+				<section>
+					<img src="images/logo-US-footer.png" style="margin:0;"/>
+					<h1 style="margin:0;">PyDungeon</h1>
+					<h3>Desarrollo de un videojuego en la nube<br>
+						con tecnologías Open Source</h3>
+					<p>
+						<b>Realizado por:</b> Luis Manuel Palomo Sivianes<br>
+						<b>Dirigido por:</b> Francisco Sivianes Castillo<br>
+					</p>
+					<!-- <img src="images/Logo-ETSII.png" style="margin:0; float:left;"/> -->
+					<img src="images/logo-dte.png" style="margin:0;"/>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
